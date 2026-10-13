@@ -4,28 +4,18 @@ on:
   push:
     branches: ["main"]
 
+  pull_request:
+    branches: ["main"]
+
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello
-        run: echo "hello from CI"
+      - name: "Say Hello"
+        run: echo "Hello"
 
-      - name: Who am I running on?
+      - name: "Do Stuff"
         run: |
-          uname -a
-          whoami
-          nproc
-          free -h
-
-      - name: This will fail
-        run: |
-          echo "about to fail..."
-          ls /nope
-          echo "you will never see this line"
-
-      - name: Where am I?
-        run: |
-          pwd
-          ls -la
-
+          echo "Doing Stuff"
+          ls -lash
+          free -mh
