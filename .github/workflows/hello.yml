@@ -19,3 +19,8 @@ jobs:
           echo "Doing Stuff"
           ls -lash
           free -mh
+
+      - name: "Pipe Trap"
+        run: |
+          echo "Pipe Trap"
+          ls /nope | echo "Still running"
