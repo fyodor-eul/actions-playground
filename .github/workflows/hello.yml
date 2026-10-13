@@ -18,6 +18,12 @@ jobs:
           nproc
           free -h
 
+      - name: This will fail
+        run: |
+          echo "about to fail..."
+          ls /nope
+          echo "you will never see this line"
+
       - name: Where am I?
         run: |
           pwd
