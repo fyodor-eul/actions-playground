@@ -8,7 +8,8 @@ on:
     branches: ["main"]
 
 defaults:
-  shell: bash
+  run:
+    shell: bash
 
 jobs:
   hello:
