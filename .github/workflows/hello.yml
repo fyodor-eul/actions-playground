@@ -27,7 +27,7 @@ jobs:
       - name: Pipe Trap
         run: |
           echo "Pipe Trap"
-          echo "Still running"
+          ls /tmp | echo "Still running"
 
       - name: Some other Stuff
         run: |
