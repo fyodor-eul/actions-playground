@@ -15,16 +15,21 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: "Say Hello"
+      - name: Say Hello
         run: echo "Hello"
 
-      - name: "Do Stuff"
+      - name: Do Stuff
         run: |
           echo "Doing Stuff"
           ls -lash
           free -mh
 
-      - name: "Pipe Trap"
+      - name: Pipe Trap
         run: |
           echo "Pipe Trap"
           ls /nope | echo "Still running"
+
+      - name: Some other Stuff
+        run: |
+          echo "Some other Stuff"
+          ls -lash /
